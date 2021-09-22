@@ -1,7 +1,7 @@
 // Добавить элемент
 const addElem = (parent, child, array) => {
     const result = parent.appendChild(document.createElement(child));
-console.log(result)
+
     array.forEach((element) => {
         eval(`result.${element[0]} = element[1]`);
     });
